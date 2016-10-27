@@ -1,0 +1,408 @@
+/* push the footer to the bottom */
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 50px auto -90px;
+	width: 960px;
+}
+footer, .push {
+	height: 20px;
+	padding: 35px 0;
+}
+
+/* end of the footer */
+
+body {
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0 auto;
+	color: #777777;
+	background-image: url("../images/concrete_seamless.png");
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Georgia", "Times New Roman", Times; serif;
+}
+
+h1{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+header{
+	border-bottom: 3px solid #cccccc;
+	height: 80px;
+	/*padding: 0 14.85%;*/
+	background-color: #ffffff;
+	overflow: auto;
+}
+
+#headWrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+nav {
+	padding-top: 25px;
+	color: gray;
+}
+
+nav a {
+	text-decoration: none;
+	color: #777777;
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	background: linear-gradient(to bottom, #4aaaa5 0%, #4aaaa5 15%,#000000 15%, #666666 15%, #666666 100%);
+}
+
+form {
+	margin: 0 25px;
+}
+
+.textBox, .textArea {
+	width: 100%;
+	margin: 10px 200px 10px 0;
+	
+}
+
+.textBox {
+	line-height: 20px;
+}
+
+.textArea {
+	display: block;
+	height: 250px;
+}
+
+.mainBody {
+	clear: both;
+	width: 650px;
+	float: left;
+	background-color: #ffffff;
+	border: thin solid #cccccc;
+	margin-bottom: 50px;
+}
+
+.sideBar {
+	float: right;
+	width: 250px;
+	background-color: #ffffff;
+	border: thin solid #cccccc;
+}
+
+.icon {
+	width: 25%;
+	height: auto;
+	padding: 0 2px;
+	margin: 5px 0 15px 10px;
+}
+
+#submitButton {
+	background: #4aaaa5;
+	border: none;
+	margin-bottom: 25px;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 10px 15px;
+}
+
+#mainHeading {
+	font-size: 26px;
+	margin: 25px 25px;
+	border-bottom: 2px solid #cccccc;
+	padding-bottom: 25px;
+}
+
+#mainHeading, #sideHeading {
+	color: #4aaaa5;
+}
+
+#sideHeading {
+	margin: 15px;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 15px;
+}
+
+#pageTitle {
+	float: left;
+	background: #4aaaa5;
+	color: #ffffff;
+	height: 55px;
+	padding: 25px 25px 0;
+}
+
+#contact, #portfolio, #about {
+	float: right;
+	padding: 0 20px;
+}
+
+#about, #portfolio {
+	border-right: thin solid lightgray;
+}
+
+#self {
+	float: left;
+	height: auto;
+	width: 25%;
+	padding: 0 25px 25px;
+}
+
+#intro {
+	margin: 0 25px 25px;
+	line-height: 150%;
+}
+ 
+.container {
+	width: 270px;
+	overflow: auto;
+	position: relative;
+	margin: 25px 25px;
+	float: left;
+}
+
+.captions {
+	position: absolute;
+	background: #4aaaa5;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+	line-height:200%;
+	left: 0;
+	top: 80%;
+	z-index: 45;
+	/*margin-top: 214px;*/
+}
+
+.thumbnails {
+	width: 100%;
+	/*position: absolute;
+	left:0;
+	top: 0;*/
+	/*border: 2px solid #cccccc;
+	margin: 0px 25px 25px;
+	float: left;*/
+}
+
+/*media queries*/
+
+@media screen and (max-width: 980px)  {
+
+	body {
+		width: 100%;
+	}
+
+	#headWrapper {
+		margin: 0 10%;
+		width: 80%;
+	}
+
+	#pageTitle {
+		/* if you change the side padding on the title
+		make sure to change margins and/or paddings on 
+		class mainHeading and id self, id intro,
+		container*/
+		padding: 25px 4% 0;
+	}
+
+
+	#wrapper {
+		width: 80%;
+		margin-left: 10%;
+		margin right: 10%;
+	}
+
+	.mainBody {
+		width: 67%;
+	}
+	
+	#mainHeading {
+		margin: 25px 4%;
+	}
+
+	#self {
+		display: block;
+		height: auto;
+		width: 92%;
+		padding: 0 4% 25px;
+	}
+
+	#intro {
+		margin: 0 4% 25px;
+	}
+
+	.sideBar {
+		float: right;
+		width: 26%;
+	}
+
+	#sideHeading {
+		margin: 4%;
+		font-size: 16px;
+	}
+
+	.icon {
+		width: 24%;
+		height: auto;
+		padding: 0 2px;
+		margin: 5px 0 15px 4%;
+	}
+
+	.container {
+		width: 92%;
+		overflow: auto;
+		margin: 25px 4%;
+		float: none;
+	}
+
+	.captions {
+		width: 100%;
+	}
+
+	.thumbnail {
+		width:100%;
+	}	
+
+}
+ 	 
+
+ @media screen and (max-width: 768px)  {
+ 	
+ 	header {
+ 		padding:0;
+ 	}
+ 	
+ 	#headWrapper{
+ 		/*change margin on wrapper with the
+		padding below*/
+		margin: 0 3%;
+		width: 94%;
+	}
+	#pageTitle {
+		/* if you change the side padding on the title
+		make sure to change margins and/or paddings on 
+		class mainHeading and id self, id intro,
+		container*/
+		padding: 25px 4% 0;
+	}
+		#wrapper {
+		width: 94%;
+		margin-left: 3%;
+		margin right: 3%;
+		
+	}
+
+	.mainBody {
+		width: 100%;
+	}
+
+	#self {
+		float: left;
+		height: auto;
+		width: 25%;
+		padding: 0 25px 25px;
+	}
+
+	.sideBar {
+		clear:both;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.icon {
+		width: 10%;
+		height: auto;
+		padding: 0 2px;
+		margin: 5px 0 15px 4%;
+	}
+
+	.container {
+		width: 42%;
+		height: auto;
+		margin: 25px 0 25px 4%;
+		float: left;
+	}
+
+ } 
+
+ @media screen and (max-width: 640px)  {
+
+ 	header{
+		overflow: auto;
+		height: auto;
+		text-align: center;
+		padding: 0 0;
+	}
+
+	#pageTitle {
+		/* if you change the side padding on the title
+		make sure to change margins and/or paddings on 
+		class mainHeading and id self, id intro*/
+		width: 100%;
+		padding: 25px 0 0;
+
+	}
+ 	
+ 	nav {
+ 		clear: both;
+ 		padding: 25px 0;
+ 		width: 100%;
+ 		float: right;
+	}
+
+	#contact, #portfolio, #about {
+		float: right;
+		width: 33%;
+		padding:0;
+	}
+
+	#wrapper {
+		width: 94%;
+		margin-left: 3%;
+		margin right: 3%;
+		
+	}
+
+	#self {
+		display: block;
+		height: auto;
+		width: 92%;
+		padding: 0 4% 25px;
+	}
+
+	#intro {
+		margin: 0 4% 25px;
+	}
+
+	.container {
+		width: 92%;
+		height: 100%;
+		margin: 25px 4%;
+		float: none;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	.captions {
+		/*position: static;*/
+		width: 100%;
+	}	
+
+ } 
