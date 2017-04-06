@@ -181,6 +181,7 @@ form {
  
 .container {
 	width: 270px;
+	height: auto;
 	overflow: auto;
 	position: relative;
 	margin: 25px 25px;
@@ -202,6 +203,7 @@ form {
 
 .thumbnails {
 	width: 100%;
+	height: auto;
 }
 
 /*media queries*/
